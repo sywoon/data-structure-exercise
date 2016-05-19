@@ -24,10 +24,17 @@ function pop(t)
 	if empty(t) then
 		return nil
 	end
-	return table.remove(t)
+	return table.remove(t, 1)
 end
 
-function top(t)
+function front(t)
+	if empty(t) then
+		return nil
+	end
+	return t[1]
+end
+
+function back(t)
 	if empty(t) then
 		return nil
 	end

@@ -10,16 +10,16 @@ local minstack = {
 
 function M:description()
 	return [[
-    一个特殊的栈，实现返回栈中最小元素。
-    要求：
-        1.pop push getMin时间复杂度都为O(1)
+  一个特殊的栈，实现返回栈中最小元素。
+  要求：
+	1.pop push getMin时间复杂度都为O(1)
 	]]
 end
 
 function M:run()
 	local answer = [[
-    实现：
-        用另一个栈来同步记录最小值，达到复杂度为O(1)的目的
+  实现：
+	用另一个栈来同步记录最小值，达到复杂度为O(1)的目的
 	]]
 	print(answer)
 
