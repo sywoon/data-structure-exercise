@@ -3,6 +3,7 @@ require "lib.main"
 local exams = {
 	"examples.stack.getMin",
 	"examples.stack.twoStackQueue",
+	"examples.stack.reverse",
 }
 
 

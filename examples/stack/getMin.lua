@@ -3,8 +3,8 @@ local stack = require "lib.stack"
 
 local M = {}
 local minstack = {
-	data = stack:new();
-	minStack = stack:new(),
+	data = stack.new();
+	minStack = stack.new(),
 }
 
 

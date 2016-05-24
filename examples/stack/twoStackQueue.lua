@@ -4,8 +4,8 @@ local queue = require "lib.queue"
 
 local M = {}
 local stackqueue = {
-	pushStack = stack:new();
-	popStack = stack:new(),
+	pushStack = stack.new();
+	popStack = stack.new(),
 }
 
 
@@ -86,7 +86,7 @@ function stackqueue:move()
 	for v in self.pushStack:elems() do
 		self.popStack:push(v)
 	end
-	self.pushStack = stack:new()
+	self.pushStack = stack.new()
 end
 
 function stackqueue:pop()
@@ -121,7 +121,7 @@ end
 function stackqueue:dump()
 	self.pushStack:dump()
 
-	local t = stack:new()
+	local t = stack.new()
 	for v in self.popStack:elems() do
 		t:push(v)
 	end

@@ -56,11 +56,11 @@ end
 
 local mt = {}
 function new(t)
-	local t = setmetatable({}, mt)
+	local s = setmetatable({}, mt)
 	for _, v in ipairs(t or {}) do
-		table.insert(t, v)
+		table.insert(s, v)
 	end
-	return t
+	return s
 end
 
 
