@@ -4,17 +4,8 @@ local exams = {
 	"examples.stack.getMin",
 	"examples.stack.twoStackQueue",
 	"examples.stack.reverse",
+	"examples.stack.catDogQueue",
 }
-
-
-local stack = require "lib.stack"
-local queue = require "lib.queue"
-local q = queue:new()
-q:push(1):push(4):push(2):push(8):push(5)
-q:dump()
-
-print("front:", q:front())
-print("back:", q:back())
 
 for idx, filename in ipairs(exams) do
 	print("exam." .. idx)
