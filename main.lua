@@ -5,6 +5,7 @@ local exams = {
 	"examples.stack.twoStackQueue",
 	"examples.stack.reverse",
 	"examples.stack.catDogQueue",
+	"examples.stack.sortStackByStack",
 }
 
 for idx, filename in ipairs(exams) do
