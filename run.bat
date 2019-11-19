@@ -1,6 +1,7 @@
 @echo off
+cls
 call bin\runlua.bat main.lua
-pause & exit
+pause & goto :eof
 
 :: error ?
 pushd %~dp0\bin

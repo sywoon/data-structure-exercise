@@ -36,6 +36,5 @@ function g_initSllib(pathes)
     end
 
     require "sllib_base"
-    print("init end", package.path)
 end
 
